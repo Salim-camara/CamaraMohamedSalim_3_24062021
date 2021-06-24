@@ -1,15 +1,28 @@
-// Cartes de fonctionnements
+// Cartes de fonctionnement
 
-.fonctionnement_second_choix {
-    background-color: coral;
+.fonctionnement_second_card {
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 5px 5px 20px $icon_color;
     @include display_flex();
     height: 75px;
     width: 325px;
-    margin-left: 150px;
+    margin-bottom: 10px;
+    padding-left: 33px;
     position: relative;
+
+    &_icon {
+        color: $icon_color;
+        margin-right: 27px;
+    }
+
     &_span {
-        background-color: blue;
+        @include display_flex(center);
+        background-color: $primary_color;
+        color: white;
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
         position: absolute;
-        left: -5px;
+        left: -12px;
     }
 }
