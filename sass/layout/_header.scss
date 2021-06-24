@@ -1,0 +1,39 @@
+// Header
+
+header {
+    @include display_column(center);
+}
+
+// Ttitre
+.title {
+    width: 100%;
+    @include display_flex(center);
+    box-shadow: 0 4px 2px -2px $primary_color;
+    &_h1 {
+        font-size: 40px;
+    }
+}
+
+// Localisation
+.location {
+    @include display_flex(center);
+    background-color: #eaeaea;
+    width: 100%;
+    &_icon {
+        color: black;
+        font-size: 15px;
+    }
+
+    &_p {
+        margin-left: 20px;
+    }
+}
+
+// Explorez
+.explorer {
+    @include display_column(center);
+    &_third_button {
+        @include btn();
+    }
+}
+

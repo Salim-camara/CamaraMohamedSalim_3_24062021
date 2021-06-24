@@ -1,0 +1,21 @@
+// Utils
+@import "./utils/variables";
+@import "./utils/functions";
+@import "./utils/mixins";
+
+// Base
+@import "./base/base";
+@import "./base/typography";
+
+// Components
+@import "./components/buttons";
+
+// Layout
+@import "./layout/header";
+@import "./layout/main_fonctionnement";
+@import "./layout/main_restaurants";
+@import "./layout/footer";
+
+// Pages
+@import "./pages/fonctionnement";
+@import "./pages/restaurants";

@@ -1,0 +1,24 @@
+// Mixins
+
+@mixin display_flex ($position: flex-start) {
+    display: flex;
+    justify-content: $position;
+    align-items: center;
+}
+
+@mixin display_column ($postion: flex-start) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: $postion;
+}
+
+@mixin btn {
+    background: linear-gradient(to bottom right, $secondary_color, $primary_color);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px 25px 25px 25px;
+    height: 50px;
+    width: 220px;
+}

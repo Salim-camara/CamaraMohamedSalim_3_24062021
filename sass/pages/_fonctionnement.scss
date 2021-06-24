@@ -1,0 +1,15 @@
+// Cartes de fonctionnements
+
+.fonctionnement_second_choix {
+    background-color: coral;
+    @include display_flex();
+    height: 75px;
+    width: 325px;
+    margin-left: 150px;
+    position: relative;
+    &_span {
+        background-color: blue;
+        position: absolute;
+        left: -5px;
+    }
+}
