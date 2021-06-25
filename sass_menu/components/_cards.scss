@@ -1,0 +1,26 @@
+// Cartes menu
+
+.cards {
+    @include dsf();
+    margin-left: 150px;
+    background-color: coral;
+    width: 400px;
+    height: 80px;
+
+    &__left {
+        @include dsc();
+        height: 100%;
+        flex-grow: 3;
+        background-color: blue;
+        width: 100%;
+    }
+
+    &__right {
+        @include dsf(flex-end);
+
+        &--p {
+            margin: 0px 15px 0px 15px;
+        }
+    }
+
+}
