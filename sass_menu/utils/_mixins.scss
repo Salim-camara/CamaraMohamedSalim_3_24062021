@@ -1,0 +1,33 @@
+// Mixins menu
+
+@mixin dsf($position: flex-start) {
+    display: flex;
+    justify-content: $position;
+    align-items: center;
+}
+
+@mixin dsc ($postion: flex-start) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: $postion;
+}
+
+@mixin btn {
+    background: linear-gradient(to bottom right, $secondary_color, $primary_color);
+    box-shadow: 5px 5px 20px $icon_color;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px 25px 25px 25px;
+    height: 50px;
+    width: 220px;
+}
+
+@mixin bgi ($url) {
+        background-image: url($url);
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 200px;
+}

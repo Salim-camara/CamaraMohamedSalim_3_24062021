@@ -1,0 +1,18 @@
+// En-tête menu
+
+header {
+    @include dsf();
+    background-color: green;
+    height: 80px;
+}
+
+.header--title {
+    flex-grow: 3;
+    width: 100%;
+    @include dsf(center);
+}
+
+.header--icon {
+    margin-left: 25px;
+    color: black;
+}
