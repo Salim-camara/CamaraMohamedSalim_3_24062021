@@ -1,12 +1,31 @@
 body {
   margin: 0px;
   padding: 0px;
-  height: 2000px;
 }
 
 main {
   margin-left: 50px;
   margin-right: 50px;
+}
+
+@font-face {
+  font-family: Shrikhand;
+  src: url("../../fonts/Shrikhand-Regular.ttf");
+}
+@font-face {
+  font-family: Roboto;
+  src: url("../../fonts/Roboto-Regular.ttf");
+}
+@font-face {
+  font-family: Roboto_bold;
+  src: url("../../fonts/Roboto-Bold.ttf");
+}
+body {
+  font-family: Roboto;
+}
+
+h1, h4 {
+  font-family: Shrikhand;
 }
 
 header {
@@ -77,6 +96,36 @@ header {
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
+}
+
+footer {
+  background-color: #353535;
+  width: 100%;
+  padding: 20px 0px 20px 0px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.footer_title {
+  margin-left: 25px;
+}
+
+.footer_content {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer_content__box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer_content__box--icon {
+  margin-right: 10px;
 }
 
 .fonctionnement_second_card {
