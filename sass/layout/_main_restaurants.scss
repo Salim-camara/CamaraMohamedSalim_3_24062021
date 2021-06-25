@@ -1,0 +1,12 @@
+// Disposition cartes restaurants
+
+.restaurants {
+    @include display_column();
+
+    &_second {
+        @include display_flex(space-around);
+        flex-wrap: wrap;
+        width: 100%;
+    }
+}
+
