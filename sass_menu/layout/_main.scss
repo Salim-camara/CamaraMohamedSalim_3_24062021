@@ -14,9 +14,23 @@ main {
 }
 
 .content {
-    background-color: yellow;
-    padding: 0px 40px 0px 40px;
-    width: 80%;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    background-color: #f6f6f6;
+    padding: 0px 20px 0px 20px;
+    width: 90%;
+}
+
+.content__cards {
+    @include dsf(space-between);
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.entrees {
+    @include dsc();
+    align-content: space-between;
+    width: 30%;
 }
 
 .content__title {
@@ -26,9 +40,10 @@ main {
 
 .categorie {
     @include dsc();
+    margin-bottom: 15px;
 
     &--h3 {
-        margin: 0px;
+        margin: 0px 0px 10px 0px;
     }
     &--span {
         height: 3px;
@@ -36,6 +51,5 @@ main {
         background-color: $tertiary-color;
     }
 }
-
 
 
