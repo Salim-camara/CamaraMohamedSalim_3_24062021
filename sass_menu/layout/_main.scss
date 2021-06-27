@@ -2,6 +2,7 @@
 
 main {
     width: 100%;
+    @include dsc(center);
 }
 
 .bgi {
@@ -11,4 +12,30 @@ main {
     background-size: cover;
     background-position: center;
 }
+
+.content {
+    background-color: yellow;
+    padding: 0px 40px 0px 40px;
+    width: 80%;
+}
+
+.content__title {
+    width: 100%;
+    @include dsf(space-between);
+}
+
+.categorie {
+    @include dsc();
+
+    &--h3 {
+        margin: 0px;
+    }
+    &--span {
+        height: 3px;
+        width: 40px;
+        background-color: $tertiary-color;
+    }
+}
+
+
 

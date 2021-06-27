@@ -2,8 +2,9 @@
 
 .cards {
     @include dsf();
-    margin-left: 150px;
-    background-color: coral;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 5px 5px 20px $icon_color;
+    overflow: hidden;
     width: 400px;
     height: 80px;
 
@@ -11,15 +12,27 @@
         @include dsc();
         height: 100%;
         flex-grow: 3;
-        background-color: blue;
         width: 100%;
+        margin-left: 15px;
+
+        &--h3 {
+            margin: 0px 0px 8px 0px;
+        }
+        &--p {
+            margin: 0px;
+        }
     }
 
     &__right {
         @include dsf(flex-end);
+        height: 100%;
 
         &--p {
-            margin: 0px 15px 0px 15px;
+            @include dsf();
+            align-items: flex-end;
+            height: 100%;
+            margin: 0px 25px 30px 15px;
+            font-weight: bold;
         }
     }
 
