@@ -1,7 +1,6 @@
 body {
   padding: 0px;
   margin: 0px;
-  height: 2000px;
 }
 
 @font-face {
@@ -87,7 +86,7 @@ header {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  background-color: green;
+  background: transparent;
   height: 80px;
 }
 
@@ -118,6 +117,9 @@ main {
   background-image: url("../../img/jay.jpg");
   background-size: cover;
   background-position: center;
+  position: absolute;
+  top: 80px;
+  z-index: auto;
 }
 
 .content {
@@ -126,6 +128,8 @@ main {
   background-color: #f6f6f6;
   padding: 0px 20px 0px 20px;
   width: 90%;
+  z-index: 1;
+  margin-top: 400px;
 }
 
 .content__cards {
@@ -166,6 +170,36 @@ main {
   height: 3px;
   width: 40px;
   background-color: #99E2D0;
+}
+
+footer {
+  background-color: #353535;
+  width: 100%;
+  padding: 20px 0px 20px 0px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.footer_title {
+  margin-left: 25px;
+}
+
+.footer_content {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer_content__box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer_content__box--icon {
+  margin-right: 10px;
 }
 
 /*# sourceMappingURL=menu_desktop.css.map */

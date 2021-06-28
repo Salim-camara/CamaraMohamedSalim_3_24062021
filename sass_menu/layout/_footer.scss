@@ -1,0 +1,25 @@
+// Pied de page menu
+
+footer {
+    background-color: $footer-bgc;
+    width: 100%;
+    padding: 20px 0px 20px 0px;
+    color: white;
+    @include dsc();
+}
+
+.footer_title {
+    margin-left: 25px;
+}
+
+.footer_content {
+    width: 100%;
+    @include dsf(space-around);
+
+    &__box {
+        @include dsf(center);
+        &--icon {
+            margin-right: 10px;
+        }
+    }
+}
