@@ -1,0 +1,12 @@
+// Bouton menu
+
+.button--style {
+    background: linear-gradient(to bottom right, $secondary_color, $primary_color);
+    box-shadow: 5px 5px 20px $icon_color;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px 25px 25px 25px;
+    height: 50px;
+    width: 220px;
+}
