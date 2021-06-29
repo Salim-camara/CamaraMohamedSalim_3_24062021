@@ -8,7 +8,8 @@ header {
 .title {
     width: 100%;
     @include display_flex(center);
-    box-shadow: 0 4px 2px -2px $primary_color;
+    box-shadow: 5px 5px 20px $icon_color;
+    z-index: 1;
     &_h1 {
         font-size: 40px;
     }
@@ -18,6 +19,8 @@ header {
 .location {
     @include display_flex(center);
     background-color: #eaeaea;
+    z-index: auto;
+    height: 50px;
     width: 100%;
     &_icon {
         color: black;
@@ -31,6 +34,10 @@ header {
 // Explorez
 .explorer {
     @include display_column(center);
+    background-color: #f6f6f6;
+    padding: 40px 0px 55px 0px;
+    width: 100%;
+
     &_third_button {
         @include btn();
         &:hover {
@@ -40,4 +47,36 @@ header {
         }
     }
 }
+
+
+
+                        // VERSION MOBILE
+
+@media screen and (max-width: 768px) {
+// Titre 
+    .title {
+        height: 65px;
+        &_h1 {
+            font-size: 35px;
+        }
+    }
+// Explorer
+    .explorer {
+    }
+
+    .explorer_first_title {
+        margin: 0px;
+        text-align: center;
+    }
+
+    .explorer_second {
+        margin-bottom: 15px;
+        &_p {
+            text-align: center;
+        }
+    }
+
+}
+
+
 

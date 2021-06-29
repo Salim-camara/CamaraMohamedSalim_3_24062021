@@ -24,3 +24,19 @@ footer {
     }
 }
 
+
+            // VERSION MOBILE
+
+@media screen and (max-width: 768px) {
+
+    .footer_content {
+        @include display_column();
+        margin-left: 25px;
+    }
+
+    h4 {
+        margin: 15px 0px 15px 0px;
+    }
+
+}
+

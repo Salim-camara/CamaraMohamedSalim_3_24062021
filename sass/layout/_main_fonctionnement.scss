@@ -3,3 +3,18 @@
 .fonctionnement_second {
     @include display_flex(space-around);
 }
+
+            // VERSION MOBILE
+
+@media screen and (max-width: 768px) {
+
+    .fonctionnement {
+        margin: 0px 20px 0px 20px;
+    }
+
+    .fonctionnement_second {
+        @include display_column(center);
+        width: 100%;
+    }
+
+}             
