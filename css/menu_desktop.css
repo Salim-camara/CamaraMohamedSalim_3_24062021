@@ -33,6 +33,13 @@ h2 {
   border-radius: 25px 25px 25px 25px;
   height: 50px;
   width: 220px;
+  transform: scale(1);
+  transition: all 0.2s;
+}
+.button--style:hover {
+  transform: scale(1.015);
+  background: linear-gradient(to bottom right, #ff83dd, #985ede);
+  box-shadow: 5px 5px 15px #4b4b4b;
 }
 
 .cards {

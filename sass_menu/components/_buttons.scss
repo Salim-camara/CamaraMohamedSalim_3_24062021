@@ -1,7 +1,7 @@
 // Bouton menu
 
 .button--style {
-    background: linear-gradient(to bottom right, $secondary_color, $primary_color);
+    background: $gradient;
     box-shadow: 5px 5px 20px $icon_color;
     color: white;
     font-weight: bold;
@@ -9,4 +9,12 @@
     border-radius: 25px 25px 25px 25px;
     height: 50px;
     width: 220px;
+    transform: scale(1);
+    transition: all 0.2s;
+
+    &:hover {
+        transform: scale(1.015);
+        background: linear-gradient(to bottom right, lighten($secondary_color, 2%), lighten($primary_color, 2%));
+        box-shadow: 5px 5px 15px darken($icon_color, 20%);
+    }
 }
