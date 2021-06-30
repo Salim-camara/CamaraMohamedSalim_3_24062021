@@ -24,6 +24,17 @@ h2 {
   font-size: 50px;
 }
 
+h4 {
+  font-family: Shrikhand;
+  font-size: 20px;
+  margin: 20px 0px 20px 0px;
+}
+
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 30px;
+  }
+}
 .button--style {
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   box-shadow: 5px 5px 20px #7e7e7e;
@@ -121,6 +132,19 @@ header {
   color: black;
 }
 
+@media screen and (max-width: 768px) {
+  header {
+    height: 65px;
+  }
+
+  .header--title {
+    font-size: 35px;
+    margin: 0px;
+  }
+  .header--icon {
+    font-size: 18px;
+  }
+}
 main {
   width: 100%;
   display: flex;
@@ -197,6 +221,30 @@ main {
   padding: 40px 0px 40px 0px;
 }
 
+@media screen and (max-width: 768px) {
+  .bgi {
+    height: 265px;
+    top: 65px;
+  }
+
+  .content {
+    margin-top: 220px;
+    width: 93.7%;
+  }
+  .content__cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .entrees {
+    width: 100%;
+  }
+  .entrees__cards {
+    width: 100%;
+  }
+}
 footer {
   background-color: #353535;
   width: 100%;
@@ -225,6 +273,22 @@ footer {
 }
 .footer_content__box--icon {
   margin-right: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .footer_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 25px;
+  }
+  .footer_content__box {
+    margin: 0px;
+  }
+  .footer_content__box--icon {
+    font-size: 13px;
+  }
 }
 
 /*# sourceMappingURL=menu_desktop.css.map */

@@ -16,3 +16,25 @@ header {
     margin-left: 25px;
     color: black;
 }
+
+
+            // VERSION MOBILE
+
+
+@media screen and (max-width: 768px) {
+
+    header {
+        height: 65px;
+    }
+
+    .header {
+        &--title {
+            font-size: 35px;
+            margin: 0px;
+        }
+        &--icon {
+            font-size: 18px;
+        }
+    }
+
+}
