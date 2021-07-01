@@ -1,0 +1,68 @@
+// Keyframes
+
+
+@keyframes spin {
+
+    0% {
+        transform: rotate(0deg);
+        @include border();
+    }
+    25% {
+        transform: rotate(90deg);
+        @include border();
+    }
+    50% {
+        transform: rotate(180deg);
+        @include border();
+    }
+    75% {
+        transform: rotate(270deg);
+        @include border();
+    }
+    100% {
+        transform: rotate(360deg);
+        @include border();
+    }
+
+}
+
+
+@keyframes spinloader {
+    
+    0% {
+        background-color: rgba(#ffffff, 0.6);
+        transform: translateX(0);
+    }
+    12% {
+        background-color: rgba(#ffffff, 0.8);
+        transform: translateX(0);
+    }
+    25% {
+        background-color: rgba(#ffffff, 0.6);
+        transform: translateX(0);
+    }
+    37% {
+        background-color: rgba(#ffffff, 0.8);
+        transform: translateX(0);
+    }
+    50% {
+        background-color: rgba(#ffffff, 0.6);
+        transform: translateX(0);
+    }
+    62% {
+        background-color: rgba(#ffffff, 0.8);
+        transform: translateX(0);
+    }
+    75% {
+        background-color: rgba(#ffffff, 0.6);
+        transform: translateX(0);
+    }
+    87% {
+        background-color: rgba(#ffffff, 0.8);
+        transform: translateX(0);
+    }
+    100% {
+        background-color: rgba(#ffffff, 0.6);
+        transform: translateX(0);
+    }
+}

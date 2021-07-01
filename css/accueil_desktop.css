@@ -1,3 +1,78 @@
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+    border-top: 10px solid #9356DC;
+    border-right: 10px solid #99E2D0;
+    border-bottom: 10px solid #FF79DA;
+    border-left: 10px solid #99E2D0;
+  }
+  25% {
+    transform: rotate(90deg);
+    border-top: 10px solid #9356DC;
+    border-right: 10px solid #99E2D0;
+    border-bottom: 10px solid #FF79DA;
+    border-left: 10px solid #99E2D0;
+  }
+  50% {
+    transform: rotate(180deg);
+    border-top: 10px solid #9356DC;
+    border-right: 10px solid #99E2D0;
+    border-bottom: 10px solid #FF79DA;
+    border-left: 10px solid #99E2D0;
+  }
+  75% {
+    transform: rotate(270deg);
+    border-top: 10px solid #9356DC;
+    border-right: 10px solid #99E2D0;
+    border-bottom: 10px solid #FF79DA;
+    border-left: 10px solid #99E2D0;
+  }
+  100% {
+    transform: rotate(360deg);
+    border-top: 10px solid #9356DC;
+    border-right: 10px solid #99E2D0;
+    border-bottom: 10px solid #FF79DA;
+    border-left: 10px solid #99E2D0;
+  }
+}
+@keyframes spinloader {
+  0% {
+    background-color: rgba(255, 255, 255, 0.6);
+    transform: translateX(0);
+  }
+  12% {
+    background-color: rgba(255, 255, 255, 0.8);
+    transform: translateX(0);
+  }
+  25% {
+    background-color: rgba(255, 255, 255, 0.6);
+    transform: translateX(0);
+  }
+  37% {
+    background-color: rgba(255, 255, 255, 0.8);
+    transform: translateX(0);
+  }
+  50% {
+    background-color: rgba(255, 255, 255, 0.6);
+    transform: translateX(0);
+  }
+  62% {
+    background-color: rgba(255, 255, 255, 0.8);
+    transform: translateX(0);
+  }
+  75% {
+    background-color: rgba(255, 255, 255, 0.6);
+    transform: translateX(0);
+  }
+  87% {
+    background-color: rgba(255, 255, 255, 0.8);
+    transform: translateX(0);
+  }
+  100% {
+    background-color: rgba(255, 255, 255, 0.6);
+    transform: translateX(0);
+  }
+}
 body {
   margin: 0px;
   padding: 0px;
@@ -323,6 +398,30 @@ footer {
   .restaurants_second_card {
     width: 100%;
   }
+}
+.spinloader {
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  position: fixed;
+  z-index: 1;
+  transform: translateX(-9999px);
+  animation-name: spinloader;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+}
+
+.spin {
+  position: absolute;
+  top: 50%;
+  right: 46%;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: 0px solid transparent;
+  animation-name: spin;
+  animation-duration: 3s;
+  animation-timing-function: linear;
 }
 
 /*# sourceMappingURL=accueil_desktop.css.map */

@@ -1,0 +1,29 @@
+// Spinloader
+
+
+.spinloader {
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    position: fixed;
+    z-index: 1;
+    transform: translateX(-9999px);
+
+    animation-name: spinloader;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+}
+
+.spin {
+    position: absolute;
+    top: 50%;
+    right: 46%;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 0px solid transparent;
+
+    animation-name: spin;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+}
