@@ -1,0 +1,15 @@
+// Keyframes menu
+
+@keyframes cascade {
+    
+    0% {
+        transform: translateY(10px);
+        box-shadow: 5px 5px 20px transparent;
+        color: transparent;
+    }
+    100% {
+        transform: translateY(0px);
+        box-shadow: 5px 5px 20px $icon_color;
+        color: black;
+    }
+}

@@ -1,0 +1,9 @@
+// Boucle menu
+
+@for $i from 1 to 10 {
+
+    .card--#{$i} {
+        animation-delay: $i*0.15s;
+    }
+
+}
