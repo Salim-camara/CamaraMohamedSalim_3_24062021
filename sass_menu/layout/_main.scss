@@ -91,3 +91,23 @@ main {
     }
 
 }
+
+
+            // VERSION TABLETTE
+
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+    .content__cards {
+        @include dsc();
+    }
+
+    .entrees {
+        width: 100%;
+    }
+
+    .entrees__cards {
+        width: 100%;
+    }
+
+}

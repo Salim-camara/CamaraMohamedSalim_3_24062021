@@ -53,3 +53,17 @@
     box-shadow: 5px 5px 20px transparent;
     color: transparent;
 }
+
+
+
+            // VERSION TABLETTE
+
+
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+    .cards {
+        width: 100%;
+    }
+
+}
