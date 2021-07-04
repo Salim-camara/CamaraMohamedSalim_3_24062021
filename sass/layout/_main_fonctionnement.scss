@@ -17,4 +17,17 @@
         width: 100%;
     }
 
-}             
+}   
+
+
+
+                        // VERSION TABLETTE
+
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+    .fonctionnement_second {
+        @include display_column(center);
+    }
+
+}
