@@ -78,11 +78,6 @@ h4 {
   margin: 20px 0px 20px 0px;
 }
 
-@media screen and (max-width: 768px) {
-  h2 {
-    font-size: 30px;
-  }
-}
 .button--style {
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   box-shadow: 5px 5px 20px #7e7e7e;
@@ -113,19 +108,22 @@ h4 {
   margin-bottom: 30px;
 }
 .cards__left {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
   height: 100%;
   flex-grow: 3;
   width: 100%;
-  margin-left: 15px;
+  margin: 30px 0px 0px 15px;
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .cards__left--h3 {
+  text-overflow: ellipsis;
+  overflow: hidden;
   margin: 0px 0px 8px 0px;
 }
 .cards__left--p {
+  text-overflow: ellipsis;
+  overflow: hidden;
   margin: 0px;
 }
 .cards__right {
@@ -142,6 +140,21 @@ h4 {
   height: 100%;
   margin: 0px 25px 30px 15px;
   font-weight: bold;
+}
+.cards__anim {
+  font-size: 10px;
+  color: crimson;
+}
+.cards__anim:hover {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 15px 0px 15px;
+  background-color: blue;
+  height: 100%;
+  color: coral;
+  font-size: 40px;
 }
 
 .cards {
@@ -195,19 +208,6 @@ header {
   color: black;
 }
 
-@media screen and (max-width: 768px) {
-  header {
-    height: 65px;
-  }
-
-  .header--title {
-    font-size: 35px;
-    margin: 0px;
-  }
-  .header--icon {
-    font-size: 18px;
-  }
-}
 main {
   width: 100%;
   display: flex;
@@ -219,7 +219,6 @@ main {
 .bgi {
   width: 100%;
   height: 500px;
-  background-image: url("../../img/jay.jpg");
   background-size: cover;
   background-position: center;
   position: absolute;
@@ -253,6 +252,9 @@ main {
   align-content: space-between;
   width: 30%;
 }
+.entrees__cards {
+  width: 100%;
+}
 
 .content__title {
   width: 100%;
@@ -285,27 +287,15 @@ main {
 }
 
 @media screen and (max-width: 768px) {
-  .bgi {
-    height: 265px;
-    top: 65px;
+  body {
+    background-color: coral;
   }
 
-  .content {
-    margin-top: 220px;
-    width: 93.7%;
-  }
   .content__cards {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-  }
-
-  .entrees {
-    width: 100%;
-  }
-  .entrees__cards {
-    width: 100%;
+    align-items: flex-start;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -360,13 +350,6 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    margin-left: 25px;
-  }
-  .footer_content__box {
-    margin: 0px;
-  }
-  .footer_content__box--icon {
-    font-size: 13px;
   }
 }
 

@@ -32,14 +32,6 @@ footer {
 
     .footer_content {
         @include dsc();
-        margin-left: 25px;
-
-        &__box {
-            margin: 0px;
-            &--icon {
-                font-size: 13px;
-            }
-        }
     }
     
 }
