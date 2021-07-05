@@ -8,6 +8,7 @@
     width: 100%;
     height: 80px;
     margin-bottom: 30px;
+    cursor: pointer;
 
     &__left {
         height: 100%;
@@ -58,14 +59,14 @@
 
 // Cascade
 .cards {
-    // animation-name: cascade;
-    // animation-duration: 0.6s;
-    // animation-timing-function: linear;
-    // animation-fill-mode: both;
+    animation-name: cascade;
+    animation-duration: 0.6s;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
 
-    // transform: translateY(10px);
-    // box-shadow: 5px 5px 20px transparent;
-    // color: transparent;
+    transform: translateY(10px);
+    box-shadow: 5px 5px 20px transparent;
+    color: transparent;
 }
 
 // Check-box

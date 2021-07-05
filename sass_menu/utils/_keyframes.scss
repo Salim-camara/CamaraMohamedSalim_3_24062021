@@ -40,13 +40,11 @@
 @keyframes checkbox {
     
     0% {
-        padding: 0px 0px 0px 0px;
         font-size: 35px;
-        transform: rotate(0deg);
+        transform: rotate(120deg);
     }
 
     100% {
-        padding: 0px 15px 0px 15px;
         font-size: 35px;
         transform: rotate(360deg);
 

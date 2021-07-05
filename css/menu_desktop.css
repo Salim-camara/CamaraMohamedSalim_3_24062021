@@ -20,12 +20,10 @@
 }
 @keyframes checkbox {
   0% {
-    padding: 0px 0px 0px 0px;
     font-size: 35px;
-    transform: rotate(0deg);
+    transform: rotate(120deg);
   }
   100% {
-    padding: 0px 15px 0px 15px;
     font-size: 35px;
     transform: rotate(360deg);
   }
@@ -93,11 +91,21 @@ h2 {
 }
 
 h4 {
-  font-family: Shrikhand;
+  font-family: Roboto;
+  font-weight: 0;
   font-size: 20px;
   margin: 20px 0px 20px 0px;
 }
 
+.categorie--h3 {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 35px;
+  }
+}
 .button--style {
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   box-shadow: 5px 5px 20px #7e7e7e;
@@ -109,6 +117,7 @@ h4 {
   width: 220px;
   transform: scale(1);
   transition: all 0.2s;
+  cursor: pointer;
 }
 .button--style:hover {
   transform: scale(1.015);
@@ -126,6 +135,7 @@ h4 {
   width: 100%;
   height: 80px;
   margin-bottom: 30px;
+  cursor: pointer;
 }
 .cards__left {
   height: 100%;
@@ -172,6 +182,16 @@ h4 {
   background-color: #99E2D0;
 }
 
+.cards {
+  animation-name: cascade;
+  animation-duration: 0.6s;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+  transform: translateY(10px);
+  box-shadow: 5px 5px 20px transparent;
+  color: transparent;
+}
+
 .cards:hover .cards__anim {
   animation-name: bgc_box;
   animation-duration: 0.4s;
@@ -196,6 +216,7 @@ h4 {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+  cursor: pointer;
 }
 .content__title--heart:hover {
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
@@ -224,6 +245,7 @@ header {
 .header--icon {
   margin-left: 25px;
   color: black;
+  cursor: pointer;
 }
 
 main {
@@ -237,6 +259,7 @@ main {
 .bgi {
   width: 100%;
   height: 500px;
+  background-image: url("../../img/jay.jpg");
   background-size: cover;
   background-position: center;
   position: absolute;
@@ -305,8 +328,24 @@ main {
 }
 
 @media screen and (max-width: 768px) {
-  body {
-    background-color: coral;
+  .bgi {
+    height: 265px;
+  }
+
+  .content {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    margin-top: 230px;
+  }
+  .content__title {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .categorie {
+    margin-left: 20px;
   }
 
   .content__cards {
@@ -314,6 +353,21 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+  }
+
+  .entrees__cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cards {
+    width: 90%;
+  }
+
+  .entrees {
+    width: 100%;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -363,11 +417,17 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+  .footer {
+    margin-left: 25px;
+  }
+
   .footer_content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    width: auto;
+    margin-left: 25px;
   }
 }
 

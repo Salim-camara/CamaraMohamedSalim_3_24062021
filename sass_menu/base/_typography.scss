@@ -25,12 +25,24 @@ h2 {
 }
 
 h4 {
-    font-family: Shrikhand;
+    font-family: Roboto;
+    font-weight: 0;
     font-size: 20px;
     margin: 20px 0px 20px 0px;
+}
+
+.categorie--h3 {
+    font-size: 20px;
 }
 
 
             // VERSION MOBILE
 
 
+@media screen and (max-width: 768px) {
+
+    h2 {
+        font-size: 35px;
+    }
+     
+}
