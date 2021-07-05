@@ -44,18 +44,11 @@
     }
 
     &__anim {
-        font-size: 10px;
-        color: crimson;
-
-        &:hover {
         @include dsc(center);
-        padding: 0px 15px 0px 15px;
-        background-color: blue;
+        font-size: 0px;
+        color: white;
         height: 100%;
-        color: coral;
-        font-size: 40px;
-        }
-
+        background-color: $tertiary-color;
     }
 }
 
@@ -65,14 +58,29 @@
 
 // Cascade
 .cards {
-    animation-name: cascade;
-    animation-duration: 0.6s;
-    animation-timing-function: linear;
+    // animation-name: cascade;
+    // animation-duration: 0.6s;
+    // animation-timing-function: linear;
+    // animation-fill-mode: both;
+
+    // transform: translateY(10px);
+    // box-shadow: 5px 5px 20px transparent;
+    // color: transparent;
+}
+
+// Check-box
+.cards:hover .cards__anim {
+    animation-name: bgc_box;
+    animation-duration: 0.4s;
+    animation-timing-function: cubic-bezier(.1,.29,.01,1.02);
     animation-fill-mode: both;
 
-    transform: translateY(10px);
-    box-shadow: 5px 5px 20px transparent;
-    color: transparent;
+    &--icon {
+        animation-name: checkbox;
+        animation-duration: 0.4s;
+        animation-timing-function: cubic-bezier(0,.93,.23,.9);
+        animation-fill-mode: both;
+    }
 }
 
 
