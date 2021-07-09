@@ -23,11 +23,13 @@ header {
     height: 50px;
     width: 100%;
     &_icon {
-        color: black;
+        color: $loc-color;
         font-size: 15px;
     }
     &_p {
         margin-left: 20px;
+        font-weight: 600;
+        color: $loc-color;
     }
 }
 
@@ -53,29 +55,21 @@ header {
                         // VERSION MOBILE
 
 @media screen and (max-width: 768px) {
-// Titre 
-    .title {
-        height: 65px;
-        &_h1 {
-            font-size: 35px;
-        }
-    }
-// Explorer
+
+
     .explorer {
-    }
-
-    .explorer_first_title {
-        margin: 0px;
-        text-align: center;
-    }
-
-    .explorer_second {
-        margin-bottom: 15px;
-        &_p {
+        &_first {
+            text-align: center;
+            padding: 0px 20px 0px 20px;
+        }
+        &_second {
+            padding: 0px 20px 0px 20px;
             text-align: center;
         }
     }
+    
 }
+
 
 
 

@@ -9,15 +9,15 @@
 @media screen and (max-width: 768px) {
 
     .fonctionnement {
-        margin: 0px 20px 0px 20px;
+        width: 100%;
     }
 
     .fonctionnement_second {
         @include display_column(center);
         width: 100%;
     }
-
-}   
+    
+}
 
 
 

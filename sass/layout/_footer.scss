@@ -31,12 +31,9 @@ footer {
 
     .footer_content {
         @include display_column();
-        margin-left: 25px;
+        width: auto;
+        padding-left: 25px;
     }
-
-    h4 {
-        margin: 15px 0px 15px 0px;
-    }
-
+    
 }
 

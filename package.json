@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Salim-camara/CamaraMohamedSalim_3_24062021/issues"
   },
-  "homepage": "https://github.com/Salim-camara/CamaraMohamedSalim_3_24062021#readme"
+  "homepage": "https://github.com/Salim-camara/CamaraMohamedSalim_3_24062021#readme",
+  "dependencies": {
+    "twing": "^5.0.2"
+  }
 }

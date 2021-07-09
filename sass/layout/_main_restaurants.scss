@@ -16,13 +16,10 @@
 
 @media screen and (max-width: 768px) {
 
-    .restaurants {
-        margin: 0px 20px 0px 20px;
-        &_second {
-            @include display_column(center);
-            margin-bottom: 15px;
-        }
+    .restaurants_second {
+        @include display_column(center);
     }
-
+    
 }
+
 

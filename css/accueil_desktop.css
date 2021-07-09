@@ -85,7 +85,7 @@ main {
 
 @media screen and (max-width: 768px) {
   main {
-    margin: 0px;
+    margin: 0px 20px 0px 20px;
   }
 }
 @font-face {
@@ -141,11 +141,13 @@ header {
   width: 100%;
 }
 .location_icon {
-  color: black;
+  color: #353535;
   font-size: 15px;
 }
 .location_p {
   margin-left: 20px;
+  font-weight: 600;
+  color: #353535;
 }
 
 .explorer {
@@ -176,22 +178,12 @@ header {
 }
 
 @media screen and (max-width: 768px) {
-  .title {
-    height: 65px;
-  }
-  .title_h1 {
-    font-size: 35px;
-  }
-
-  .explorer_first_title {
-    margin: 0px;
+  .explorer_first {
     text-align: center;
+    padding: 0px 20px 0px 20px;
   }
-
   .explorer_second {
-    margin-bottom: 15px;
-  }
-  .explorer_second_p {
+    padding: 0px 20px 0px 20px;
     text-align: center;
   }
 }
@@ -203,7 +195,7 @@ header {
 
 @media screen and (max-width: 768px) {
   .fonctionnement {
-    margin: 0px 20px 0px 20px;
+    width: 100%;
   }
 
   .fonctionnement_second {
@@ -237,15 +229,11 @@ header {
 }
 
 @media screen and (max-width: 768px) {
-  .restaurants {
-    margin: 0px 20px 0px 20px;
-  }
   .restaurants_second {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 15px;
   }
 }
 footer {
@@ -284,11 +272,8 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    margin-left: 25px;
-  }
-
-  h4 {
-    margin: 15px 0px 15px 0px;
+    width: auto;
+    padding-left: 25px;
   }
 }
 .fonctionnement_second_card {
@@ -322,8 +307,8 @@ footer {
 
 @media screen and (max-width: 768px) {
   .fonctionnement_second_card {
-    width: 75%;
-    margin-bottom: 25px;
+    width: 90%;
+    margin-bottom: 20px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -411,6 +396,7 @@ footer {
 @media screen and (max-width: 768px) {
   .restaurants_second_card {
     width: 100%;
+    margin-bottom: 30px;
   }
 }
 .spinloader {
