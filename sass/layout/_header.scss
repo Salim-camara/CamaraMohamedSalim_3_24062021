@@ -43,6 +43,7 @@ header {
     &_third_button {
         @include btn();
         &:hover {
+            cursor: pointer;
             transform: scale(1.015);
             background: linear-gradient(to bottom right, lighten($secondary_color, 2%), lighten($primary_color, 2%));
             box-shadow: 5px 5px 15px darken($icon_color, 20%);
