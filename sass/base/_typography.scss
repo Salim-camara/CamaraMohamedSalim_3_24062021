@@ -28,13 +28,18 @@ h4 {
     font-size: 20px;
 }
 
-a {
+.contact {
     text-decoration: none;
     color: white;
 
     &:hover {
         cursor: pointer;
     }
+}
+
+.a_restaurants {
+    color: black;
+    text-decoration: none;
 }
 
 
