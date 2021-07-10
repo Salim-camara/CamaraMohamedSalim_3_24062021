@@ -255,12 +255,27 @@ main {
 .bgi {
   width: 100%;
   height: 500px;
-  background-image: url("../../img/jay.jpg");
   background-size: cover;
   background-position: center;
   position: absolute;
   top: 80px;
   z-index: auto;
+}
+
+.francaise {
+  background-image: url("../../img/toa.jpg");
+}
+
+.gout {
+  background-image: url("../../img/jay.jpg");
+}
+
+.sens {
+  background-image: url("../../img/louis.jpg");
+}
+
+.enchantee {
+  background-image: url("../../img/stil.jpg");
 }
 
 .content {

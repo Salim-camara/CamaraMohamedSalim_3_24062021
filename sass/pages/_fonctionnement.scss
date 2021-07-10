@@ -25,6 +25,15 @@
         position: absolute;
         left: -12px;
     }
+
+    &:hover {
+        background-color: rgba($primary-color, .1);
+        color: $primary-color;
+    }
+}
+
+.fonctionnement_second_card:hover .fonctionnement_second_card_icon {
+    color: $primary-color;
 }
 
 
