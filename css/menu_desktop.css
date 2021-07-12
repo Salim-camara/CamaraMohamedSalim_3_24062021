@@ -64,6 +64,10 @@
   animation-delay: 1.35s;
 }
 
+.card--10 {
+  animation-delay: 1.5s;
+}
+
 body {
   padding: 0px;
   margin: 0px;
