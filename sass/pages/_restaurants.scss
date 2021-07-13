@@ -17,16 +17,16 @@
     }
     // Les différentes images
     &--bgi1 {
-        @include bgi("../../img/jay.jpg");
+        @include bgi("../img/jay.jpg");
     }
     &--bgi2 {
-        @include bgi("../../img/stil.jpg");
+        @include bgi("../img/stil.jpg");
     }
     &--bgi3 {
-        @include bgi("../../img/toa.jpg");
+        @include bgi("../img/toa.jpg");
     }
     &--bgi4 {
-        @include bgi("../../img/louis.jpg");
+        @include bgi("../img/louis.jpg");
     }
 
     &__new {
