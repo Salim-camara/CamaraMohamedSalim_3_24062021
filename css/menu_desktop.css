@@ -75,15 +75,15 @@ body {
 
 @font-face {
   font-family: Shrikhand;
-  src: url("../../fonts/Shrikhand-Regular.ttf");
+  src: url("../fonts/Shrikhand-Regular.ttf");
 }
 @font-face {
   font-family: Roboto;
-  src: url("../../fonts/Roboto-Regular.ttf");
+  src: url("../fonts/Roboto-Regular.ttf");
 }
 @font-face {
   font-family: Roboto_bold;
-  src: url("../../fonts/Roboto-Bold.ttf");
+  src: url("../fonts/Roboto-Bold.ttf");
 }
 body {
   font-family: Roboto;
@@ -267,19 +267,19 @@ main {
 }
 
 .francaise {
-  background-image: url("../../img/toa.jpg");
+  background-image: url("../img/toa.jpg");
 }
 
 .gout {
-  background-image: url("../../img/jay.jpg");
+  background-image: url("../img/jay.jpg");
 }
 
 .sens {
-  background-image: url("../../img/louis.jpg");
+  background-image: url("../img/louis.jpg");
 }
 
 .enchantee {
-  background-image: url("../../img/stil.jpg");
+  background-image: url("../img/stil.jpg");
 }
 
 .content {
