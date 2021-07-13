@@ -91,7 +91,6 @@ body {
 }
 body {
   font-family: Roboto_thin;
-  font-weight: bold;
 }
 
 h2 {
@@ -101,7 +100,7 @@ h2 {
 
 h3 {
   font-family: Roboto;
-  font-weight: 600;
+  font-weight: bold;
 }
 
 h4 {
@@ -374,7 +373,7 @@ main {
   }
 
   .categorie {
-    margin-left: 20px;
+    margin-left: 27px;
   }
 
   .content__cards {
