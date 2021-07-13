@@ -15,8 +15,14 @@
     src: url("../fonts/Roboto-Bold.ttf");
 }
 
+@font-face {
+    font-family: Roboto_light;
+    src: url("../fonts/Roboto-thin.ttf");
+}
+
 body {
-    font-family: Roboto;
+    font-family: Roboto_light;
+    font-weight: bold;
 }
 
 h2 {
@@ -24,14 +30,23 @@ h2 {
     font-size: 50px;
 }
 
-h4 {
+h3 {
     font-family: Roboto;
+    font-weight: 600;
+}
+
+h4 {
+    font-family: Shrikhand;
     font-size: 20px;
     margin: 20px 0px 20px 0px;
 }
 
 .categorie--h3 {
     font-size: 20px;
+}
+
+.cards__right--p {
+    font-family: Roboto;
 }
 
 

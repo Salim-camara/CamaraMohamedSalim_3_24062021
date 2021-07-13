@@ -6,7 +6,8 @@
   "scripts": {
     "sass_accueil": "sass --watch ./sass/main.scss:./css/accueil_desktop.css",
     "sass_menu": "sass --watch ./sass_menu/main.scss:./css/menu_desktop.css",
-    "prefix": "postcss ./css/accueil_desktop.css --use autoprefixer -d ./css"
+    "prefix": "postcss ./css/accueil_desktop.css --use autoprefixer -d ./css",
+    "prefix_menu": "postcss ./css/menu_desktop.css --use autoprefixer -d ./css"
   },
   "repository": {
     "type": "git",
